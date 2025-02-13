@@ -10,7 +10,7 @@ pipeline{
             }
             steps{
               sh ''' 
-              chown -R 777:777 "/.npm"
+              
               ls -la
                node --version
                npm --version
