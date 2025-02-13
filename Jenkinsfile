@@ -12,10 +12,10 @@ pipeline{
               sh ''' 
               chown -R 777:777 "/.npm"
               ls -la
-              sudo node --version
-              sudo npm --version
-              sudo npm ci
-              sudo npm run build
+               node --version
+               npm --version
+               npm ci
+               npm run build
               ls -la
               '''
         }
