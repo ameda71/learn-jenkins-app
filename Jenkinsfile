@@ -10,7 +10,7 @@ pipeline{
             }
             steps{
               sh ''' 
-              sudo chown -R 777:777 "/.npm"
+              chown -R 777:777 "/.npm"
               ls -la
               sudo node --version
               sudo npm --version
